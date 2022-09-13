@@ -1,0 +1,21 @@
+<section>
+  
+  <div class="example-container">
+
+    <p>login works!</p>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="pat@example.com" [formControl]="email" required>
+      </mat-form-field>
+  
+      &nbsp;&nbsp;
+      <button mat-raised-button 
+              color="primary"
+              (click)="login()">
+              Ingresar
+      </button>
+  
+  </div>
+
+</section>
