@@ -7,8 +7,6 @@
 # Only exists if Bazel was run
 /bazel-out
 
-netlify.toml
-
 # dependencies
 /node_modules
 
