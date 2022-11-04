@@ -6,14 +6,15 @@
     "heroku-postbuild": "npm run build:ssr",
     "start": "npm run serve:ssr",
     "start-pwa": "ng build --configuration production && http-server -p 8080 -c-1 dist/pwa-ssr-angular-heroku",
-    "build": "ng build",
+    "build-dev": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "server-http": "http-server -p 8080 -c-1 dist/pwa-ssr-angular-heroku",
     "dev:ssr": "ng run pwa-ssr-angular-heroku:serve-ssr",
     "serve:ssr": "node dist/pwa-ssr-angular-heroku/server/main.js",
     "build:ssr": "ng build --configuration production && ng run pwa-ssr-angular-heroku:server",
-    "prerender": "ng run pwa-ssr-angular-heroku:prerender"
+    "prerender": "ng run pwa-ssr-angular-heroku:prerender",
+    "vercel-build": "npm run build:ssr"
   },
   "engines": {
     "node": "16.13.x",
